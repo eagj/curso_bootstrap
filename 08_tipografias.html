@@ -15,7 +15,7 @@
     <div class="container">
         <div class="row">
             <div class="col-6">
-                <p class="bg-warning my-2">Del h1 al h6, ya hay unos estilos determinados</p>
+                <p class="bg-warning my-2">Del <b>h1 al h6</b>, ya hay unos estilos determinados</p>
                 <h1>h1. Bootstrap heading</h1>
                 <h2>h2. Bootstrap heading</h2>
                 <h3>h3. Bootstrap heading</h3>
@@ -24,7 +24,7 @@
                 <h6>h6. Bootstrap heading</h6>
             </div>
             <div class="col-6">
-                <p class="bg-warning my-2">Para los p, solo hay que añadir las clases del h1 al h6 para que coja los estilos de los h anteriores</p>
+                <p class="bg-warning my-2"><b>Para los p</b>, solo hay que añadir las clases del <b>h1 al h6</b> para que coja los estilos de los h anteriores</p>
                 <p class="h1">h1. Bootstrap heading</p>
                 <p class="h2">h2. Bootstrap heading</p>
                 <p class="h3">h3. Bootstrap heading</p>
@@ -36,7 +36,7 @@
 
         <div class="row">
             <div class="col-12">
-                <p class="bg-warning my-2">El class text-muted hace el texto mas claro</p>
+                <p class="bg-warning my-2">El class <b>text-muted</b> hace el texto mas claro</p>
                 <p>Texto normal</p>
                 <p class="text-muted">Texto con text-muted</p>
             </div>
@@ -44,7 +44,7 @@
 
         <div class="row">
             <div class="col-12">
-                <p class="bg-warning my-2">El class display usa una tipografía mas fina y mas grande que los h</p>
+                <p class="bg-warning my-2">El class <b>display</b> usa una tipografía mas fina y mas grande que los h</p>
                 <h1 class="display-1">Display 1</h1>
                 <h1 class="display-2">Display 2</h1>
                 <h1 class="display-3">Display 3</h1>
@@ -54,9 +54,72 @@
 
         <div class="row">
             <div class="col-12">
-                <p class="bg-warning my-2">El class lead cambia la tipografia por una mas fina</p>
+                <p class="bg-warning my-2">El class <b>lead</b> hace que un texto destaque</p>
                 <p>Texto normal</p>
                 <p class="lead">Texto con lead</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <p class="bg-warning my-2">Etiquetas html5 y como se ven en bootstrap</p>
+                <p>La etiqueta mark <mark>hace un efecto de marco</mark> sobre el texto.</p>
+                <p>La etiqueta del <del>hace que un texto quede como tachado</del></p>
+                <p> la etiqueta u <u>subraya un texto</u></p>
+                <p>la etiqueta small hace que un texto <small>se vea mas pequeño</small></p>
+                <p> la etiqueta strong o b hace que texto <strong> se vea en negrita</strong></p>
+                <p>la etiqueta em hace que un texto <em>tenga la forma itálica</em></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <p class="bg-warning my-2">Con la etiqueta <b>abbr</b> y un title podemos crear textos de ayuda, con el class <b>initialism</b> hacemos el texto con mayusculas</p>
+                <p>Al dejar el raton encima recibimos el <abbr title="esto es un texto de ayuda">texto de ayuda</abbr></p>
+                <p>Texto con <abbr title="este texto tiene el class initialism y lo pone en mayusculas" class="initialism">initialism</abbr></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <p class="bg-warning my-2">La etiqueta <b>blockquote</b> sirve para marcar un texto y con <b>blockquote-footer</b> para mostar su autor si añadimos al autor entre la etiqueta <b>cite</b>, al pasar por encima se verá el texto definido</p>
+                <blockquote class="blockquote">
+                    <p class="mb-0">La vida es una barca</p>
+                    <footer class="blockquote-footer"> Dicho por <cite title="Carderon de la mierda">Calderon de la mierda</cite></footer>
+                </blockquote>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <p class="bg-warning my-2">podemos justuficar los textos añadiendo los <b>class text-left, text-center y text-right</b></p>
+                <p class="text-left">Texto alineado a la izqda (por defecto)</p>
+                <p class="text-center">Texto alineado al centro</p>
+                <p class="text-right">Texto alineado a la dcha.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <p class="bg-warning my-2">crar listas, al ul se le añade el class <b>list-unstyled</b>, para quitar los puntos a la dcha de por defecto, se pueden añadir ul dentro de li para crear sublistas</p>
+                <ul class="list-unstyled">
+                    <li>Texto en lista 1</li>
+                    <li>Texto en lista 2</li>
+                    <li>Texto en lista 3 con sublistas
+                        <ul>
+                            <li>sublista 1</li>
+                            <li>sublista 2</li>
+                            <li>sublista 3
+                                <ul>
+                                    <li>sub sublista 1</li>
+                                    <li>sub sublista 2</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Texto en lista 4</li>
+                </ul>
+                <p class="bg-warning my-2">Si al ul se le añade el class <b>list-inline</b>  a los li el class <b>list-inline-item</b> se hacen listas en linea</p>
+                <ul class="list-inline">
+                    <li class="list-inline-item">Texto en linea 1</li>
+                    <li class="list-inline-item">Texto en linea 2</li>
+                    <li class="list-inline-item">Texto en linea 2</li>
+                </ul>
             </div>
         </div>
     </div>
