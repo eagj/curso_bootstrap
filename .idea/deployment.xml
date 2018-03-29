@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="On explicit save action" serverName="http://ufopi.ddns.net:8090/" uploadOnCheckin="a6cac9fe-8390-4b71-8e08-f76bf531c540">
+  <component name="PublishConfigData" autoUpload="On explicit save action" serverName="http://ufopi.ddns.net:8090/">
     <serverData>
       <paths name="http://ufopi.ddns.net:8090/">
         <serverdata>
@@ -10,7 +10,6 @@
         </serverdata>
       </paths>
     </serverData>
-    <option name="myUploadOnCheckinName" value="http://ufopi.ddns.net:8090/" />
     <option name="myAutoUpload" value="ON_EXPLICIT_SAVE" />
   </component>
 </project>
