@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grid responsive</title>
+
+    <!-- ESTILOS BOOTSTRAP-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- JS BOOTSTRAP-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<div class="container">
+    <h1>Grid responsive</h1>
+    <p>Como crear distintos tamaños de columnas dependiendo de la resolución</p>
+    <div class="container">
+        <table class="table table-bordered table-striped">
+            <thead>
+            <tr>
+                <th></th>
+                <th class="text-center">
+                    Extra small<br>
+                    <small>&lt;576px</small>
+                </th>
+                <th class="text-center">
+                    Small<br>
+                    <small>≥576px</small>
+                </th>
+                <th class="text-center">
+                    Medium<br>
+                    <small>≥768px</small>
+                </th>
+                <th class="text-center">
+                    Large<br>
+                    <small>≥992px</small>
+                </th>
+                <th class="text-center">
+                    Extra large<br>
+                    <small>≥1200px</small>
+                </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th class="text-nowrap" scope="row">Max container width</th>
+                <td>None (auto)</td>
+                <td>540px</td>
+                <td>720px</td>
+                <td>960px</td>
+                <td>1140px</td>
+            </tr>
+            <tr>
+                <th class="text-nowrap" scope="row">Class prefix</th>
+                <td><code>.col-</code></td>
+                <td><code>.col-sm-</code></td>
+                <td><code>.col-md-</code></td>
+                <td><code>.col-lg-</code></td>
+                <td><code>.col-xl-</code></td>
+            </tr>
+            <tr>
+                <th class="text-nowrap" scope="row"># of columns</th>
+                <td colspan="5">12</td>
+            </tr>
+            <tr>
+                <th class="text-nowrap" scope="row">Gutter width</th>
+                <td colspan="5">30px (15px on each side of a column)</td>
+            </tr>
+            <tr>
+                <th class="text-nowrap" scope="row">Nestable</th>
+                <td colspan="5">Yes</td>
+            </tr>
+            <tr>
+                <th class="text-nowrap" scope="row">Column ordering</th>
+                <td colspan="5">Yes</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="container my-5">
+        <h2>3 columnas en modo Large, 2+1 en small y una en modo extra small</h2>
+        <div class="row">
+            <div class="col-12 col-sm-6 col-lg-4">
+                <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti doloremque expedita, explicabo minima non repellat repudiandae voluptate. Aut fugit illum in ipsum magnam nam porro, voluptas? Aspernatur cumque eligendi totam.</span><span>Ad, blanditiis deleniti deserunt dolor eligendi eos hic ipsum necessitatibus nulla numquam, perferendis possimus ratione, similique voluptatem voluptatum. Ab blanditiis consequatur esse harum incidunt natus possimus quia rerum. Qui, sint.</span><span>Accusantium aliquid aspernatur commodi delectus, dolore facere fugiat laborum maiores neque nihil ratione, rerum sapiente, tempora? Accusantium ad dolores ducimus eius facilis labore minima nulla, sequi suscipit voluptate? Libero, officia.</span></p>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+                <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti doloremque expedita, explicabo minima non repellat repudiandae voluptate. Aut fugit illum in ipsum magnam nam porro, voluptas? Aspernatur cumque eligendi totam.</span><span>Ad, blanditiis deleniti deserunt dolor eligendi eos hic ipsum necessitatibus nulla numquam, perferendis possimus ratione, similique voluptatem voluptatum. Ab blanditiis consequatur esse harum incidunt natus possimus quia rerum. Qui, sint.</span><span>Accusantium aliquid aspernatur commodi delectus, dolore facere fugiat laborum maiores neque nihil ratione, rerum sapiente, tempora? Accusantium ad dolores ducimus eius facilis labore minima nulla, sequi suscipit voluptate? Libero, officia.</span></p>
+            </div>
+            <div class="col-12 col-sm-12 col-lg-4">
+                <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti doloremque expedita, explicabo minima non repellat repudiandae voluptate. Aut fugit illum in ipsum magnam nam porro, voluptas? Aspernatur cumque eligendi totam.</span><span>Ad, blanditiis deleniti deserunt dolor eligendi eos hic ipsum necessitatibus nulla numquam, perferendis possimus ratione, similique voluptatem voluptatum. Ab blanditiis consequatur esse harum incidunt natus possimus quia rerum. Qui, sint.</span><span>Accusantium aliquid aspernatur commodi delectus, dolore facere fugiat laborum maiores neque nihil ratione, rerum sapiente, tempora? Accusantium ad dolores ducimus eius facilis labore minima nulla, sequi suscipit voluptate? Libero, officia.</span></p>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+
+</body></html>

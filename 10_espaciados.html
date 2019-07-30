@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Espaciados</title>
+
+    <!-- ESTILOS BOOTSTRAP-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- JS BOOTSTRAP-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container">
+    <p class="bg-warning my-2 p-2 text-center">Los margenes y espaciados trabajan en <b>rem</b>, un rem es igual a los px definidos en el body <small>(por defecto 16px)</small></p>
+    <div class="row">
+        <div class="col-12">
+            <p class="bg-warning mt-5 p-2 text-center">Ejemplo de margenes desde nada hasta 5 (el maximo)</p>
+            <p class="bg-primary text-white">Este parrafo tiene el margen por defecto en todos los lados</p>
+            <p class="bg-primary text-white m-0">Este parrafo no tiene ningún tipo de margen en todos los lados <b>(.m-0)</b></p>
+            <p class="bg-primary text-white m-1">Este parrafo tiene un margen en todos los lados de 1 <b>(.m-1)</b></p>
+            <p class="bg-primary text-white m-2">Este parrafo tiene un margen en todos los lados de 2 <b>(.m-2)</b></p>
+            <p class="bg-primary text-white m-3">Este parrafo tiene un margen en todos los lados de 3 <b>(.m-3)</b></p>
+            <p class="bg-primary text-white m-4">Este parrafo tiene un margen en todos los lados de 4 <b>(.m-4)</b></p>
+            <p class="bg-primary text-white m-5">Este parrafo tiene un margen en todos los lados de 5 <b>(.m-5)</b></p>
+        </div>
+        <div class="col-12">
+            <p class="bg-warning mt-5 p-2 text-center">Ejemplo de padding desde nada hasta 5 (el maximo)</p>
+            <p class="bg-primary text-white">Este parrafo no tiene ningún tipo de margen ni padding</p>
+            <p class="bg-primary text-white p-1">Este parrafo tiene un padding en todos los lados de 1 <b>(.p-1)</b></p>
+            <p class="bg-primary text-white p-2">Este parrafo tiene un padding en todos los lados de 2 <b>(.p-2)</b></p>
+            <p class="bg-primary text-white p-3">Este parrafo tiene un padding en todos los lados de 3 <b>(.p-3)</b></p>
+            <p class="bg-primary text-white p-4">Este parrafo tiene un padding en todos los lados de 4 <b>(.p-4)</b></p>
+            <p class="bg-primary text-white p-5">Este parrafo tiene un padding en todos los lados de 5 <b>(.p-5)</b></p>
+        </div>
+        <div class="col-12">
+            <p class="bg-warning mt-5 p-2 text-center">Tambien se puede añadir margin o padding a cualquiera de los lados</p>
+            <p class="bg-primary text-white ml-3">Este parrafo tiene un margin-left de 3 <b>(.ml-3)</b></p>
+            <p class="bg-primary text-white mr-3">Este parrafo tiene un margin-right de 3 <b>(.mr-3)</b></p>
+            <p class="bg-primary text-white my-3">Este parrafo tiene un margin-top y margin-bottom de 3 <b>(.my-3)</b></p>
+            <p class="bg-primary text-white mx-3">Este parrafo tiene un margin-left y margin-right de 3 <b>(.mx-3)</b></p>
+            <p class="bg-primary text-white pl-3">Este parrafo tiene un padding-left de 3 <b>(.pl-3)</b></p>
+            <p class="bg-primary text-white pr-3">Este parrafo tiene un padding-right de 3 <b>(.pr-3)</b></p>
+            <p class="bg-primary text-white py-3">Este parrafo tiene un padding-top y padding-bottom de 3 <b>(.py-3)</b></p>
+            <p class="bg-primary text-white px-3">Este parrafo tiene un padding-left y padding-right de 3 <b>(.px-3)</b></p>
+            <p class="bg-primary text-white p-3 m-3">Estas clases se pueden juntar para tener un padding y un margin de 3 en todos los lados <b>(.p-3 .m-3)</b></p>
+        </div>
+        <div class="col-12">
+            <p class="bg-warning mt-5 p-2 text-center">Todo esto se puede aplicar a las clases de mq para tener distintos margenes en un modo o en otro</p>
+            <p class="bg-primary text-white p-lg-3 p-md-0">Este parrafo tiene un padding a todos los lados de 3 en modo lg <b>(.p-lg-3)</b> pero 0 en en los medios e inferiores <b>(p-md-0)</b></p>
+        </div>
+        <div class="col-12">
+            <p class="bg-warning mt-5 p-2 text-center">si un elemento tiene un width fijo, se puede centrar poniendo <b>(.mx-auto)</b></p>
+            <p class="bg-primary text-white p-3 mx-auto" style="width:50%;">Este parrafo tiene un <b>width:50%</b> y un <b>mx-auto</b> el cual lo centro horizontalmente</p>
+        </div>
+    </div>
+
+</div>
+<body>
+
+</body>
+</html>
